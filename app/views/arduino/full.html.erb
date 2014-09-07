@@ -1,0 +1,56 @@
+<head>
+<title><lame></title>
+<%= stylesheet_link_tag "full", media: "all" %>
+<%= javascript_include_tag "application" %>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+<script src="/assets/mousetrap.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<script>Mousetrap.bind('w', function(){document.getElementById("up").click();});</script>
+<script>Mousetrap.bind('x', function(){document.getElementById("still").click();});</script>
+<script>Mousetrap.bind('s', function(){document.getElementById("down").click();});</script>
+<script>Mousetrap.bind('up', function(){document.getElementById("for").click();});</script>
+<script>Mousetrap.bind('down', function(){document.getElementById("back").click();});</script>
+<script>Mousetrap.bind('left', function(){document.getElementById("left").click();});</script>
+<script>Mousetrap.bind('right', function(){document.getElementById("right").click();});</script>
+<script>Mousetrap.bind('ctrl', function(){document.getElementById("stop").click();});</script>
+</head>
+<body>
+
+  <div class="video"><img src="http://192.168.43.4:8080/?action=stream" width="100%" height="100%"></div>
+  <div class="line"></div>
+  <div id="controls">
+    <div id="ser">Servo</div>
+    <div id="mot">Motor</div>
+  </div>
+  
+  
+  <div id="controls">
+    <div id="line">
+      <div id ="servo"><%=button_to "up", {:controller => "arduino", :action => "create", :value=>"8"},:method=>:post,:class=>"arrow",:id=>"up" %></div>
+      <div id ="motor"><%=button_to "for", {:controller => "arduino", :action => "create", :value=>"4"},:method=>:post,:class=>"arrow",:id=>"for"%></div>
+    </div>
+    <div id="line"> 
+      <div id ="servo"><%=button_to "still", {:controller => "arduino", :action => "create", :value=>"9"},:method=>:post,:class=>"arrow", :id=>"still" %></div>
+      <div id ="motora"><%=button_to "left", {:controller => "arduino", :action => "create", :value=>"6"},:method=>:post,:class=>"arrow", :id=>"left"%></div>
+      <div id ="motorb"><%=button_to "stop", {:controller => "arduino", :action => "create", :value=>"7"},:method=>:post,:class=>"arrow",:id=>"stop"%></div>
+      <div id ="motorc"><%=button_to "right", {:controller => "arduino", :action => "create", :value=>"5"},:method=>:post,:class=>"arrow",:id=>"right"%></div>   
+    </div>
+    <div id="line"> 
+      <div id ="servo"><%=button_to "down", {:controller => "arduino", :action => "create", :value=>"10"},:method=>:post,:class=>"arrow", :id=>"down"%></div>
+      <div id ="motor"><%=button_to "back", {:controller => "arduino", :action => "create", :value=>"3"},:method=>:post,:class=>"arrow", :id=>"back"%></div>   
+    </div>
+    </div>
+  
+<div id="ack">Powered by Trek</div>
+  
+<div id="guide">
+  <p>for movement:arrow keys, ctrl to stop</p>
+  <p>w:servo-up </p>
+  <p>s:servo-down</p>
+  <p>x:servo-stop</p>
+  
+  </div>
+
+
+  

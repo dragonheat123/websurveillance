@@ -1,0 +1,146 @@
+body{
+
+  background-image:url("/assets/download.jpg");
+	background-size: cover;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+  overflow:hidden;
+  font-family: 'Lato', 'sans-serif';
+}
+
+h1{
+text-align:center;
+color:white;
+font-size:200%;
+margin-botton: 3%;
+}
+
+
+.video{
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:400;
+position:fixed;
+margin-top:-5%;
+  
+
+}
+
+.alimgholder img{
+
+background-color: #EEEEEE;
+background-position: center;
+background-repeat: no-repeat;
+display: block;
+}
+
+.line{
+  border-top: 1px solid white;
+  width: 325px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:5%;
+  margin-bottom:2%;
+}
+
+.arrow{
+  background-color:#ffffff;
+	border-radius:50%;
+	border:1px solid #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:8px;
+	text-decoration:none;
+  width: 27px;
+	height: 27px; 
+  float:left
+  text-align:center;
+}
+.arrow:hover{
+  background-color:rgba(255,255,255,0.7);}
+
+#servo{
+    display:inline-block;
+    margin-left:-98%;
+}
+  
+#right1{
+    display:inline-block;
+    margin-right:10%;
+    margin-left:1%;
+}
+
+#controls{
+  width: 325px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:5%;
+}
+
+#line{
+  margin-bottom:2%;
+}
+
+#motor{
+    display:inline-block;
+    margin-right:-150%;
+    margin-left:280%;
+}
+
+#motora{
+    display:inline-block;
+    margin-left:268%;
+    margin-right:-200.4%;
+}
+
+#motorb{
+    display:inline-block;
+    margin-left:203.3%;
+  margin-right:-214%;
+  
+}
+
+#motorc{
+    display:inline-block;
+  margin-left:216.5%;
+  margin-right:-140%;
+}
+
+#mot{
+  display:inline-block;
+  margin-left:275%;
+  margin-right:-105%;
+  color:white;
+}
+
+#ser{
+  display:inline-block;
+  margin-left:-100%;
+  color:white;
+}
+
+.spyro{
+  display:inline-block;
+  color:yellow;
+  margin-left:46%;
+  
+}
+
+.bot{
+  display:inline-block;
+}
+
+#ack{
+  text-align:center;
+  color:white;
+  padding-top:2%;
+  padding-bottom:2%;
+}
+    
+#guide{
+  color:white;
+  text-align:right;
+  font-size:80%;
+}
